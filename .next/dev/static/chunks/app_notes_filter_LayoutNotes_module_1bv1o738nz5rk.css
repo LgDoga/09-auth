@@ -1,0 +1,22 @@
+/* [project]/app/notes/filter/LayoutNotes.module.css [app-client] (css) */
+.LayoutNotes-module__Eh5KMq__container {
+  flex-direction: row;
+  flex: 1;
+  display: flex;
+}
+
+.LayoutNotes-module__Eh5KMq__sidebar {
+  color: #fff;
+  background-color: #2c2c2c;
+  border-right: 1px solid #ddd;
+  flex-direction: column;
+  width: 250px;
+  padding: 16px;
+  display: flex;
+}
+
+.LayoutNotes-module__Eh5KMq__notesWrapper {
+  width: 100%;
+}
+
+/*# sourceMappingURL=app_notes_filter_LayoutNotes_module_1bv1o738nz5rk.css.map*/

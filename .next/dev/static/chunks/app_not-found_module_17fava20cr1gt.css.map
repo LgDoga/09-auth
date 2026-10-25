@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/PC-Myron/Documents/My%20projects/React.js%20+%20Next.js%20Hw/08-zustand/app/not-found.module.css"],"sourcesContent":[".title {\n  text-align: center;\n  font-size: 32px;\n  margin: 48px 0 16px;\n}\n\n.description {\n  text-align: center;\n  color: #666;\n}\n"],"names":[],"mappings":"AAAA;;;;;;AAMA"}}]
+}

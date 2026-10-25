@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/PC-Myron/Documents/My%20projects/React.js%20+%20Next.js%20Hw/08-zustand/app/notes/filter/LayoutNotes.module.css"],"sourcesContent":[".container {\r\n  display: flex;\r\n  flex-direction: row;\r\n  flex: 1;\r\n}\r\n\r\n.sidebar {\r\n  width: 250px;\r\n  background-color: #2c2c2c;\r\n  color: white;\r\n  padding: 16px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  border-right: 1px solid #ddd;\r\n}\r\n\r\n.notesWrapper {\r\n  width: 100%;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;;;;;;;AAUA"}}]
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/PC-Myron/Documents/My%20projects/React.js%20+%20Next.js%20Hw/08-zustand/components/TanStackProvider/TanStackProvider.tsx"],"sourcesContent":["\"use client\";\n\nimport { useState } from \"react\";\nimport type { ReactNode } from \"react\";\nimport { QueryClient, QueryClientProvider } from \"@tanstack/react-query\";\n\ninterface TanStackProviderProps {\n  children: ReactNode;\n}\n\nexport default function TanStackProvider({ children }: TanStackProviderProps) {\n  const [queryClient] = useState(() => new QueryClient());\n\n  return (\n    <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>\n  );\n}\n"],"names":["TanStackProvider","children","queryClient","client"],"mappings":";;;;;AAEA;AAEA;AAAA;;;AAJA;;;AAUe,SAASA,iBAAiB,EAAEC,QAAQ,EAAyB;;IAC1E,MAAM,CAACC,YAAY,GAAG,IAAA,yKAAQ;qCAAC,IAAM,IAAI,+LAAW;;IAEpD,qBACE,6LAAC,gNAAmB;QAACC,QAAQD;kBAAcD;;;;;;AAE/C;GANwBD;KAAAA"}}]
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/Loader/Loader.module.css"],"sourcesContent":[".text {\r\n  font-size: 16px;\r\n  text-align: center;\r\n  max-width: 600px;\r\n  margin: 40px auto;\r\n  padding: 12px 16px;\r\n  border-radius: 6px;\r\n  border: 1px solid transparent;\r\n  color: #084298;\r\n  background-color: #e8f4fd;\r\n  border-color: #b6d4fe;\r\n}\r\n"],"names":[],"mappings":"AAAA"}}]
+}

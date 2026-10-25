@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/notes/action/create/CreateNote.module.css"],"sourcesContent":[".main {\n  flex: 1;\n}\n\n.container {\n  width: 90%;\n  max-width: 1280px;\n  margin: 0px auto;\n  padding: 0 16px 16px;\n}\n\n.title {\n  font-size: 36px;\n  font-weight: 700;\n  color: #1a1a1a;\n  margin-bottom: 60px;\n  text-align: center;\n}\n"],"names":[],"mappings":"AAAA;;;;AAIA;;;;;;;AAOA"}}]
+}

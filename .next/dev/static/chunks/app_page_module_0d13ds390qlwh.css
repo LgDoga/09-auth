@@ -1,0 +1,28 @@
+/* [project]/app/page.module.css [app-client] (css) */
+.page-module__E0kJGG__main {
+  flex: 1;
+}
+
+.page-module__E0kJGG__container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px 16px;
+}
+
+.page-module__E0kJGG__title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.page-module__E0kJGG__description {
+  color: #444;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/*# sourceMappingURL=app_page_module_0d13ds390qlwh.css.map*/

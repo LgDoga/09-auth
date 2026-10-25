@@ -1,0 +1,21 @@
+/* [project]/app/notes/action/create/CreateNote.module.css [app-client] (css) */
+.CreateNote-module__aVly8a__main {
+  flex: 1;
+}
+
+.CreateNote-module__aVly8a__container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px 16px;
+}
+
+.CreateNote-module__aVly8a__title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=app_notes_action_create_CreateNote_module_css_1igg3k2-ikub5._.single.css.map*/
