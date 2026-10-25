@@ -1,38 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
+import { parseSetCookie } from "cookie";
 import { checkSession } from "./lib/api/serverApi";
 
 const privateRoutes = ["/profile", "/notes"];
 const publicRoutes = ["/sign-in", "/sign-up"];
-
-interface ParsedCookie {
-  name: string;
-  value: string;
-  expires?: Date;
-  path?: string;
-  maxAge?: number;
-}
-
-function parseSetCookie(cookieString: string): ParsedCookie {
-  const [pair, ...attributes] = cookieString.split(";").map((s) => s.trim());
-  const separatorIndex = pair.indexOf("=");
-
-  const result: ParsedCookie = {
-    name: pair.slice(0, separatorIndex),
-    value: pair.slice(separatorIndex + 1),
-  };
-
-  for (const attribute of attributes) {
-    const [rawKey, ...rest] = attribute.split("=");
-    const key = rawKey.toLowerCase();
-    const value = rest.join("=");
-
-    if (key === "expires") result.expires = new Date(value);
-    if (key === "path") result.path = value;
-    if (key === "max-age") result.maxAge = Number(value);
-  }
-
-  return result;
-}
 
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -40,15 +11,15 @@ export async function proxy(request: NextRequest) {
   const refreshToken = request.cookies.get("refreshToken")?.value;
 
   const isPublicRoute = publicRoutes.some((route) =>
-    pathname.startsWith(route),
+    pathname.startsWith(route)
   );
   const isPrivateRoute = privateRoutes.some((route) =>
-    pathname.startsWith(route),
+    pathname.startsWith(route)
   );
 
   if (accessToken) {
     if (isPublicRoute) {
-      return NextResponse.redirect(new URL("/profile", request.url));
+      return NextResponse.redirect(new URL("/", request.url));
     }
     return NextResponse.next();
   }
@@ -60,21 +31,18 @@ export async function proxy(request: NextRequest) {
 
       if (setCookie && sessionResponse.data) {
         const cookieArray = Array.isArray(setCookie) ? setCookie : [setCookie];
-        const parsedCookies = cookieArray.map(parseSetCookie);
-
-        for (const cookie of parsedCookies) {
-          request.cookies.set(cookie.name, cookie.value);
-        }
 
         const response = isPublicRoute
-          ? NextResponse.redirect(new URL("/profile", request.url))
-          : NextResponse.next({ request: { headers: request.headers } });
+          ? NextResponse.redirect(new URL("/", request.url))
+          : NextResponse.next();
 
-        for (const cookie of parsedCookies) {
-          response.cookies.set(cookie.name, cookie.value, {
-            expires: cookie.expires,
-            path: cookie.path,
-            maxAge: cookie.maxAge,
+        for (const cookieString of cookieArray) {
+          const parsed = parseSetCookie(cookieString);
+
+          response.cookies.set(parsed.name, parsed.value, {
+            expires: parsed.expires,
+            path: parsed.path,
+            maxAge: parsed.maxAge,
           });
         }
 
