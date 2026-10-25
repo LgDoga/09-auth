@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 .env
 .env.*
+.next
+node_modules
+.env
+.env*.localgit log --oneline -3

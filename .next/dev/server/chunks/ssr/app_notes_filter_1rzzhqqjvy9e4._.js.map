@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/notes/filter/LayoutNotes.module.css [app-rsc] (css module)"],"sourcesContent":["__turbopack_context__.v({\n  \"container\": \"LayoutNotes-module__Eh5KMq__container\",\n  \"notesWrapper\": \"LayoutNotes-module__Eh5KMq__notesWrapper\",\n  \"sidebar\": \"LayoutNotes-module__Eh5KMq__sidebar\",\n});\n"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA"}},
-    {"offset": {"line": 12, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/PC-Myron/Documents/My%20projects/React.js%20+%20Next.js%20Hw/08-zustand/app/notes/filter/layout.tsx"],"sourcesContent":["import type { ReactNode } from \"react\";\r\nimport css from \"./LayoutNotes.module.css\";\r\n\r\ninterface FilterLayoutProps {\r\n  children: ReactNode;\r\n  sidebar: ReactNode;\r\n}\r\n\r\nexport default function FilterLayout({ children, sidebar }: FilterLayoutProps) {\r\n  return (\r\n    <section className={css.container}>\r\n      <aside className={css.sidebar}>{sidebar}</aside>\r\n      <div className={css.notesWrapper}>{children}</div>\r\n    </section>\r\n  );\r\n}\r\n"],"names":["FilterLayout","children","sidebar","className","container","notesWrapper"],"mappings":";;;;;AACA;;;AAOe,SAASA,aAAa,EAAEC,QAAQ,EAAEC,OAAO,EAAqB;IAC3E,qBACE,8OAAC;QAAQC,WAAW,4JAAG,CAACC,SAAS;;0BAC/B,8OAAC;gBAAMD,WAAW,4JAAG,CAACD,OAAO;0BAAGA;;;;;;0BAChC,8OAAC;gBAAIC,WAAW,4JAAG,CAACE,YAAY;0BAAGJ;;;;;;;;;;;;AAGzC"}}]
-}

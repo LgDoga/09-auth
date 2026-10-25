@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/Pagination/Pagination.module.css"],"sourcesContent":[".pagination {\r\n  display: flex;\r\n  justify-content: center;\r\n  gap: 4px;\r\n  margin: 16px 0;\r\n  list-style: none;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.pagination li {\r\n  border: 1px solid #dee2e6;\r\n  border-radius: 4px;\r\n  cursor: pointer;\r\n  min-width: 36px;\r\n  height: 36px;\r\n  transition:\r\n    background-color 0.2s ease,\r\n    color 0.2s ease;\r\n}\r\n\r\n.pagination li a {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  width: 100%;\r\n  height: 100%;\r\n  text-decoration: none;\r\n  color: #0d6efd;\r\n  font-size: 14px;\r\n}\r\n\r\n.pagination li:hover {\r\n  background-color: #e9ecef;\r\n}\r\n\r\n.pagination li.active:hover {\r\n  background-color: #0d6efd;\r\n}\r\n\r\n.active {\r\n  background-color: #0d6efd;\r\n  border-color: #0d6efd;\r\n}\r\n\r\n.active a {\r\n  color: #fff !important;\r\n  font-weight: 500;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;;AAUA;;;;;;;;;AAWA;;;;;;;;;;;AAWA;;;;AAIA;;;;AAIA;;;;;AAKA"}}]
-}

@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/PC-Myron/Documents/My%20projects/React.js%20+%20Next.js%20Hw/08-zustand/app/notes/filter/[...slug]/error.tsx"],"sourcesContent":["\"use client\";\r\n\r\ninterface ErrorProps {\r\n  error: Error;\r\n}\r\n\r\nexport default function Error({ error }: ErrorProps) {\r\n  return <p>Could not fetch the list of notes. {error.message}</p>;\r\n}\r\n"],"names":["Error","error","message"],"mappings":";;;;;AAAA;;AAMe,SAASA,MAAM,EAAEC,KAAK,EAAc;IACjD,qBAAO,6LAAC;;YAAE;YAAoCA,MAAMC,OAAO;;;;;;;AAC7D;KAFwBF"}}]
-}
